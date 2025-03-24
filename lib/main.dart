@@ -5,7 +5,7 @@ void main() {
 }
 
 class KoperasiApp extends StatelessWidget {
-  const KoperasiApp({Key? key}) : super(key: key);
+  const KoperasiApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,13 +25,13 @@ class KoperasiApp extends StatelessWidget {
 }
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  State<LoginScreen> createState() => LoginScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class LoginScreenState extends State<LoginScreen> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
@@ -73,8 +73,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              Image.network(
-                'https://raw.githubusercontent.com/trisnadewi1410/Trisna-PersonalWebsite/main/img/logo.png.png',
+              Image.asset(
+                '../assets/Logo_undiksha.png',
                 width: 120,
                 height: 120,
               ),
@@ -178,7 +178,7 @@ class _LoginScreenState extends State<LoginScreen> {
 }
 
 class MainMenuScreen extends StatelessWidget {
-  const MainMenuScreen({Key? key}) : super(key: key);
+  const MainMenuScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -225,7 +225,7 @@ class MainMenuScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.3),
+                    color: const Color.fromARGB(45, 135, 135, 135),
                     spreadRadius: 1,
                     blurRadius: 5,
                   ),
@@ -235,8 +235,8 @@ class MainMenuScreen extends StatelessWidget {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
-                    child: Image.network(
-                      'https://raw.githubusercontent.com/trisnadewi1410/Trisna-PersonalWebsite/main/img/foto1.jpg',
+                    child: Image.asset(
+                      '../assets/foto.jpg',
                       width: 100,
                       height: 100,
                       fit: BoxFit.cover,
@@ -252,7 +252,7 @@ class MainMenuScreen extends StatelessWidget {
                           color: const Color(0xFFE3E3F5),
                           width: double.infinity,
                           child: const Text(
-                            'Nasabah\nNi Komang Ayu Trisna',
+                            'Nasabah\nI Gusti Nyoman Adiwiguna Dharma Sanjaya',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
@@ -280,7 +280,7 @@ class MainMenuScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.3),
+                    color: const Color.fromARGB(45, 135, 135, 135),
                     spreadRadius: 1,
                     blurRadius: 5,
                   ),
@@ -336,7 +336,7 @@ class MainMenuScreen extends StatelessWidget {
                       children: [
                         Text('Butuh Bantuan?'),
                         Text(
-                          '0812-5959-2736',
+                          '0887-0307-2244',
                           style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
