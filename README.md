@@ -1,3 +1,7 @@
+![alt text](https://github.com/adiwigunadharmasanjaya/2315091031_LayoutAplikasiInternetBanking/blob/master/assets/login.png?raw=true)
+![alt text](https://github.com/adiwigunadharmasanjaya/2315091031_LayoutAplikasiInternetBanking/blob/master/assets/home.png?raw=true)
+
+
 # flutter_application_5
 
 A new Flutter project.
